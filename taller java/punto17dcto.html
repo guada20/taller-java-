@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let codigo=prompt("ingrese codigo del producto porfavor");
+      let valprod=parseFloat(prompt("ingrese el valor del producto porfavor"));
+      let cantprod=parseInt(prompt("ingrese la cantidad de productos porfavor"));
+      let dcto=(cantprod*valprod*0.10);
+
+      if(cantprod>=50){
+        valprodut=(cantprod*valprod-dcto);
+        alert("el producto"  +codigo+  "obtuvo un dto de"  +dcto+  "y el valor total del producto es"  +valprodut);
+      }else{
+        valproduct1=(cantprod*valprod);
+        alert("el producto"  +codigo+  "no obtuvo descuento y el valor total es de"  +valproduct1);
+        
+      }
+    </script>
+</body>
+</html>

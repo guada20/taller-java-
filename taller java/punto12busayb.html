@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       let numpas;
+       let placaA;
+       let placaB;
+       let valorpasaje;
+       let total;
+
+       let ruta=prompt("ingrese ruta A o B");
+       if(ruta=="A"){
+        numpas=parseInt(prompt("ingrese numero de pasajeros"));
+        placaA=prompt("ingrese la placa del bus");
+        valorpasaje=1200;
+        total=numpas*valorpasaje;
+        alert("el valor total del bus de placa"  +placaA+  "es de"  +total);
+
+         }else{
+
+        numpas=parseInt(prompt("ingrese el numero de pasajeros"));
+        placaB=prompt("ingrese la placa del bus");
+        valorpasaje=1000;
+        total=numpas*valorpasaje;
+        alert("el valor total del bus de placa"  +placaB+  "es de"  +total);
+       }
+
+        
+    </script>
+
+</body>
+</html>

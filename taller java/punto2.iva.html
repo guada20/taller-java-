@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let preart=parseFloat(prompt("ingrese precio del articulo porfavor"));
+        let cantart=parseInt(prompt("ingrese cantidad de articulos porfavor"));
+        dcto=(cantart*preart*0.20);
+        iva=(cantart*preart*0.19);
+        prefinal=(cantart*preart+iva-dcto);
+        alert("cantidad de articulos comprados"  +cantart);
+        alert("el valor del iva es:" +iva);
+        alert("el descuento en la compra es:"  +dcto);
+        alert("el precio final de la compra es:"  +prefinal);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre=prompt("ingrese su nombre porfavor");
+        let nota1=parseFloat(prompt("ingrese su primer nota porfavor"));
+        let nota2=parseFloat(prompt("ingrese su segunda nota porfavor"));
+        let nota3=parseFloat(prompt("ingrese su tercer nota porfavor"));
+        let nota4=parseFloat(prompt("ingrese su cuarta nota porfavor"));
+
+        let promedio=(nota1+nota2+nota3+nota4)/4;
+
+        if(promedio>=3.0){
+        alert(nombre+  "su promedio es"  +promedio+  "ganaste");
+        }else{
+            alert(nombre+  "su promedio es"  +promedio+  "perdiste");
+        }
+    </script>
+</body>
+</html>

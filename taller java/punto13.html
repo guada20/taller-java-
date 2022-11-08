@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let nombre;
+     let horastraba;
+     let salbasicohora;
+     let deduc;
+     let bon;
+     let tipocontrato=prompt("ingrese su tipo de contrato");
+
+     if(tipocontrato=="fijo"){
+        nombre=prompt("ingrese su nombre porfavor");
+        horastraba=parseFloat(prompt("ingrese total de horas trabajadas"));
+        salbasicohora=parseFloat(prompt("ingrese su salario basico por hora"));
+        deduc=parseFloat(prompt("ingrese el valor de sus deducciones"));
+        bon=parseFloat(prompt("ingrese el valor de sus bonificaciones"));
+        salarioneto=horastraba*salbasicohora-deduc+bon;
+        alert("el total del salario neto del trabajador fijo"  +nombre+   "es de"  +salarioneto);
+
+     }else{
+        nombre=prompt("ingrese su nombre porfavor");
+        horastraba=parseFloat(prompt("ingrese total de horas trabajadas"));
+        salarioneto=horastraba*6000;
+        alert("el total de salario del trabajador temporal"  +nombre+  "es igual a"  +salarioneto);
+     }
+    </script>
+
+       
+</body>
+</html>
